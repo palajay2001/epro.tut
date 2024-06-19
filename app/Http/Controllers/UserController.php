@@ -16,7 +16,6 @@ class UserController extends Controller
         return view('user.register');
     }
 
-// User Register here
     public function Register(Request $request){
         $request->validate([
             'name'=>'required',
@@ -35,7 +34,7 @@ class UserController extends Controller
         Return redirect()->Route('LoginForm')->withErrors('message', 'Register has been successfull!');
     }
 
-//User can login here
+
     public function LoginForm(){
         return view('user.login');
     }
