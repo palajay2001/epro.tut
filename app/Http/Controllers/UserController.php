@@ -110,6 +110,7 @@ class UserController extends Controller
         return view('user.updatestudent', compact('data'));
     }
 
+    // Update process
     public function Update(Request $request, $id){
         $request->validate([
             'name'=>'required',
